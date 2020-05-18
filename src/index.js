@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", function(event) {
       event.preventDefault()
-      console.log("button click")
+
       let li = document.createElement("li")
+      
       li.innerText = textBox.value
       tasks.append(li)
   })
